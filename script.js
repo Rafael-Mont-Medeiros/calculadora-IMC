@@ -24,6 +24,6 @@ function classificacao (imc){
     if (imc > 40){
         return 'Obesidade extrema'
     }
-}
+} 
 
 
