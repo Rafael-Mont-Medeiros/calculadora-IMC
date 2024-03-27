@@ -4,6 +4,9 @@ function imcCalc(){
     const nome = document.querySelector('#nome').value
     const imc = (peso / (alt * alt)).toFixed(1)
     document.querySelector('#res').innerHTML = `Nome: ${nome} <br> IMC: ${imc}<br> Grau de obesidade:${classificacao(imc)}`
+    if( alt == 0 || peso == 0 || nome == 0){
+        alert('Preencha todos os campos')
+    }
 }
 function classificacao (imc){
     if(imc < 18.5){
@@ -25,5 +28,14 @@ function classificacao (imc){
         return 'Obesidade extrema'
     }
 } 
+
+ function limpar(){
+    nome.value= ''
+    alt.value = ''
+    peso.value = ''
+    document.querySelector('#res').innerHTML = ''
+}
+
+
 
 

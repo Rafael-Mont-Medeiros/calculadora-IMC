@@ -12,21 +12,23 @@
 
         <div id="calc-imc">
             <h1>Calculadora-IMC</h1>
-            <p>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome">
-            </p>
-            <p>
-                <label for="alt">Altura</label>
-                <input type="number" id="alt">
-            </p>
-            <p>
-                <label for="peso">Peso</label>
-                <input type="number" id="peso">
-            </p>
-            <button onclick="imcCalc()">Calcular</button>
-            <p id="res"> </p>
-            
+            <div id="infos">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                
+                <p>
+                    <label for="alt">Altura:</label>
+                    <input type="number" id="alt" placeholder="ex: 1.75">
+                </p>
+                <p>
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso" placeholder="ex:100">
+                </p>
+            </div>
+                <button onclick="imcCalc()">Calcular</button>
+                <button id="clear" onclick="limpar()">limpar</button>
+                <p id="res"> </p>
         </div>
     </div>
     
